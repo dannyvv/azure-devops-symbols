@@ -331,6 +331,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.0.tgz#f0ddca5a61e52627c9dcb771a6039d44694597bc"
   integrity sha512-gCYSfQpy+LYhOFTKAeE8BkyGqaxmlFxe+n4DKM6DR0wzw/HISUE/hAmkC/KT8Sw5PCJblqg062b3z9gucv3k0A==
 
+"@types/oboe@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@types/oboe/-/oboe-2.1.0.tgz#a4965cd50010c6ce9ed30626f51c4a8c8264a5fe"
+  integrity sha512-2F95dk3QRgauL9gTUrydXkmnHA1tSCMzqwlSwXlfuBW8Y8F4IfgHecdTf7x4UX9sn3dpNKpfk297r+f/YHJXtA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -739,6 +746,14 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+azure-devops-node-api@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/azure-devops-node-api/-/azure-devops-node-api-11.0.0.tgz#1ca5ee15112e330b416bf8c14af200a815c19291"
+  integrity sha512-hbcOqIucM5vxx0u89E9klSJ1D5aHaTwrgFujpD2AjlLa95JeokAWL4d6y9bs+7hwtcslb79syTzqT+uQfUXAjA==
+  dependencies:
+    tunnel "0.0.6"
+    typed-rest-client "^1.8.4"
 
 bach@^1.0.0, bach@^1.2.0:
   version "1.2.0"
@@ -1908,6 +1923,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+http-https@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/http-https/-/http-https-1.0.0.tgz#2f908dd5f1db4068c058cd6e6d4ce392c913389b"
+  integrity sha1-L5CN1fHbQGjAWM1ubUzjkskTOJs=
+
 human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
@@ -2722,6 +2742,13 @@ object.reduce@^1.0.0:
     for-own "^1.0.0"
     make-iterator "^1.0.0"
 
+oboe@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/oboe/-/oboe-2.1.5.tgz#5554284c543a2266d7a38f17e073821fbde393cd"
+  integrity sha1-VVQoTFQ6ImbXo48X4HOCH73jk80=
+  dependencies:
+    http-https "^1.0.0"
+
 once@^1.3.0, once@^1.3.1, once@^1.3.2, once@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -2917,7 +2944,7 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-qs@^6.9.4:
+qs@^6.9.1, qs@^6.9.4:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.10.1.tgz#4931482fa8d647a5aab799c5271d2133b981fb6a"
   integrity sha512-M528Hph6wsSVOBiYUnGf+K/7w0hNshs/duGsNXPUCLH5XAqjEtiPGwNONLV0tBH8NoGb0mvD5JubnUTrujKDTg==
@@ -3595,7 +3622,7 @@ tslib@^2.0.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tunnel@^0.0.6:
+tunnel@0.0.6, tunnel@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
@@ -3615,6 +3642,15 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.5.0.tgz#0a2e78c2e77907b252abe5f298c1b01c63f0db3d"
   integrity sha512-180WMDQaIMm3+7hGXWf12GtdniDEy7nYcyFMKJn/eZz/6tSLXrUN9V0wKSbMjej0I1WHWbpREDEKHtqPQa9NNw==
 
+typed-rest-client@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/typed-rest-client/-/typed-rest-client-1.8.4.tgz#ba3fb788e5b9322547406392533f12d660a5ced6"
+  integrity sha512-MyfKKYzk3I6/QQp6e1T50py4qg+c+9BzOEl2rBmQIpStwNUoqQ73An+Tkfy9YuV7O+o2mpVVJpe+fH//POZkbg==
+  dependencies:
+    qs "^6.9.1"
+    tunnel "0.0.6"
+    underscore "^1.12.1"
+
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz#a97ee7a9ff42691b9f783ff1bc5112fe3fca9080"
@@ -3631,6 +3667,11 @@ uglify-js@^3.1.4:
   version "3.13.7"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.7.tgz#25468a3b39b1c875df03f0937b2b7036a93f3fee"
   integrity sha512-1Psi2MmnZJbnEsgJJIlfnd7tFlJfitusmR7zDI8lXlFI0ACD4/Rm/xdrU8bh6zF0i74aiVoBtkRiFulkrmh3AA==
+
+underscore@^1.12.1:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
+  integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
 
 undertaker-registry@^1.0.0, undertaker-registry@^1.0.1:
   version "1.0.1"

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Microsoft.VisualStudio.Services.Symbol.WebApi</AssemblyName>
+    <RootNamespace>Microsoft.VisualStudio.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\.cache\nuget\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
