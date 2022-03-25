@@ -17,7 +17,8 @@
     "workspaces": {
         "packages": [
             "packages/*"
-        ]
+        ],
+        "nohoist": ["packages/webpack4-plugin"]
     },
     "devDependencies": {
         "beachball": "^2.20.0",
